@@ -58,6 +58,18 @@ function areaCirculo(radio){
 }
 //console.log("el area de mi circulo es de: " + areaCirculo + " cm²")
 console.groupEnd;
+
+//Calculo de un triangulo isósceles
+console.group("trianguloisosceles")
+function alturaTrianguloIsosceles(a,b,){
+const primerResultado = b * b;
+const segundoResultado = a * a;
+const tercerResultado = segundoResultado - (primerResultado / 4);
+const h = Math.sqrt(tercerResultado);
+return h;
+}
+console.groupEnd;
+
 // Aquí interactuamos con don html
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("inputCuadrado");
