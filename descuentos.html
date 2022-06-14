@@ -7,7 +7,22 @@
     <title>Holiwi descuentos platzi js</title>
 </head>
 <body>
-    <h1>porcentajes y descuentos</h1>
+    <header><h1>porcentajes y descuentos</h1></header>
+    <section><h2>calcula el precio a pagar de tus productos con descuentos</h2>
+    <form>
+        <label for="priceinput">Escribe el precio de tu producto</label>
+            <input id="priceinput" type="number">
+            <label for="inputdiscount">Escribe el descuento de tu producto</label>
+            <input  id="inputdiscount" type="number">
+            <button type="button" onclick="onClickdiscount()">
+                Calcular el precio con descuento
+            </button>
+            <p id="resultPrice"></p>
+    </form>
+    
+    
+    
+    </section>
     
     <script src="./js/descuentos.js"></script>
 </body>
